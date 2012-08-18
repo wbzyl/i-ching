@@ -1,0 +1,28 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+
+\documentclass[11pt]{article}
+
+\usepackage{fontspec} % Font selection for XeLaTeX; see fontspec.pdf for documentation
+\defaultfontfeatures{Mapping=tex-text} % to support TeX conventions like ``---''
+\usepackage{xunicode} % Unicode support for LaTeX character names (accents, European chars, etc)
+\usepackage{xltxtra} % Extra customizations for XeLaTeX
+
+\usepackage{i-ching}
+\newfontfamily\ichingfont{I-Ching}
+
+\begin{document}
+
+1: {\ichingfont  \XeTeXglyph 1} (brak)
+
+2: {\ichingfont  \XeTeXglyph 2} (brak)
+
+3: {\ichingfont  \XeTeXglyph 3} (to jest znak o kodzie 1)
+
+4: {\ichingfont  \XeTeXglyph 4} (to jest znak o kodzie 2)
+
+5: {\ichingfont  \XeTeXglyph 5} itd
+
+6: {\ichingfont  \XeTeXglyph 6} itd
+
+\end{document}

@@ -1,0 +1,17 @@
+
+``I-CHING package'' by Wlodek Bzyl <matwb@univ.gda.pl>
+
+  November 2002
+
+  The package contains I-Ching-Regular -- Type 1 font, 
+  iching.sty and icircle.eps -- macros and graphics for 
+  typesetting divinations, and dod.sh -- shell script 
+  to make divinations with computer.
+
+  The English translation of ``I Ching'' divinations is written
+  by Alan M Stanier (see the file iching.tex on the CTAN)
+
+  The I-Ching-Regular font was programmed with MTYPE13
+  tools (available from CTAN's).
+
+  The package is distributed under GPL.

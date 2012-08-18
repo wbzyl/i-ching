@@ -1,0 +1,104 @@
+%
+% I Ching style file
+%                               by Wlodek Bzyl, <matwb@univ.gda.pl>
+% August 2012
+
+\ProvidesPackage{i-ching}
+
+\def\ichingPrefix{iching::}
+
+% Encoding
+
+\def\ichingdef#1#2#3% name name code
+  {\expandafter\chardef\csname\ichingPrefix#1\endcsname=#3
+   \expandafter\chardef\csname\ichingPrefix#2\endcsname=#3}
+\def\iching#1{\csname\ichingPrefix#1\endcsname}
+
+% Trigrams
+
+\ichingdef{cosmos}{111}{65} % niebiosa
+\ichingdef{thunder}{100}{66} % błyskawica
+\ichingdef{water}{010}{67} % rzeka
+\ichingdef{mountain}{001}{68} % skała
+\ichingdef{earth}{000}{69} % ziemia
+\ichingdef{wind}{011}{70} % wiatr
+\ichingdef{fire}{101}{71} % ogień
+\ichingdef{lake}{110}{72} % mokradło
+
+% Hexagrams
+
+\ichingdef{ch'ien1}{111111}{1} % niebiosa
+\ichingdef{ch'ien2}{001000}{15} % skromność
+
+\ichingdef{chien1}{001010}{39} % przeszkoda
+\ichingdef{chien2}{001011}{53} % łagodny postęp
+\ichingdef{chien3}{110010}{60} % ograniczanie
+
+\ichingdef{k'un1}{000000}{2} % ziemia
+\ichingdef{k'un2}{010110}{47} % okowy
+
+\ichingdef{chun}{100010}{3} % początkowe troski
+\ichingdef{meng}{010001}{4} % naiwność
+\ichingdef{hsu}{111010}{5} % oczekiwanie
+\ichingdef{sung}{010111}{6} % sprzeczka
+\ichingdef{shih}{010000}{7} % żołnierze
+
+\ichingdef{pi1}{000010}{8} % związek
+\ichingdef{pi2}{101001}{22} % powab
+
+\ichingdef{hsiao ch'u}{111011}{9} % ograniczona siła w małym
+\ichingdef{u lu}{110111}{10} % stąpanie
+\ichingdef{t'ai}{111000}{11} % pokój
+\ichingdef{p'i}{000111}{12} % stagnacja
+\ichingdef{t'ung jen}{101111}{13} % miłość i przyjaźń
+\ichingdef{ta yu}{111101}{14} % wielki skarb
+\ichingdef{yu}{001000}{16} % entuzjazm
+\ichingdef{sui}{100110}{17} % naśladowanie
+\ichingdef{ku}{011001}{18} % naprawa
+\ichingdef{lin}{110000}{19} % zbliżenie
+\ichingdef{kuan}{000011}{20} % kontemplacja
+\ichingdef{shih ho}{100101}{21} % przegryzanie
+\ichingdef{po}{000001}{23} % samodzielność
+\ichingdef{fu}{100000}{24} % powrót
+\ichingdef{wu wang}{100111}{25} % niewinność
+\ichingdef{ta ch'u}{111001}{26} % ograniczona siła w wielkim
+
+\ichingdef{i1}{100001}{27} % żywienie
+\ichingdef{i2}{100011}{42} % zysk
+
+\ichingdef{ta kuo}{011110}{28} % nadmiar w wielkim
+\ichingdef{k'an}{010010}{29} % topiel
+\ichingdef{li}{101101}{30} % ogień
+
+\ichingdef{hsien1}{001110}{31} % oddziaływanie
+\ichingdef{hsien2}{010100}{40} % rozładowanie
+
+\ichingdef{heng}{011100}{32} % wytrwałość
+\ichingdef{tun}{001111}{33} % ustępstwo
+\ichingdef{ta chuang}{111100}{34} % siła
+\ichingdef{chin}{000101}{35} % postęp
+\ichingdef{ming}{101000}{36} % zmrok
+\ichingdef{chia jen}{101011}{37} % ród
+\ichingdef{k'uei}{110101}{38} % opozycja
+
+\ichingdef{sun1}{110001}{41} % strata
+\ichingdef{sun2}{011011}{57} % podmuch
+
+\ichingdef{kuai}{111110}{43} % przełom
+\ichingdef{kou}{011111}{44} % % spotkanie
+\ichingdef{ts'ui}{000110}{45} % zbiór
+\ichingdef{sheng}{011000}{46} % wznoszenie
+\ichingdef{ching}{011010}{48} % studnia
+\ichingdef{ko}{101110}{49} % przewrót
+\ichingdef{ting}{011101}{50} % naczynie ofiarne
+\ichingdef{chen}{100100}{51} % błyskawica
+\ichingdef{ken}{001001}{52} % góra
+\ichingdef{kuei mei}{110100}{54} % poślubianie narzeczonej
+\ichingdef{feng}{101100}{55} % obfitość
+\ichingdef{lu}{001101}{56} % podróżnik
+\ichingdef{tui}{110110}{58} % radość
+\ichingdef{huan}{010011}{59} % marnotrawienie
+\ichingdef{chung fu}{110011}{61} % wewnętrzna prawda
+\ichingdef{hsiao kuo}{001100}{62} % powodzenie małego
+\ichingdef{chi chi}{101010}{63} % po spełnianiu
+\ichingdef{wei chi}{010101}{64} % przed spełnianiem
